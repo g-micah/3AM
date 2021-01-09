@@ -11,7 +11,7 @@ if(empty($_SESSION['newuser'])){
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+<title>3AM</title>
   <link rel="stylesheet" type="text/css" href="mycss.css">
 </head>
 <body>

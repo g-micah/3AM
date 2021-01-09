@@ -9,7 +9,7 @@ if (isset($_SESSION['login_user'])) {
 <html>
 
 <head>
-  <title></title>
+<title>3AM</title>
   <link rel="stylesheet" type="text/css" href="mycss.css">
 </head>
 

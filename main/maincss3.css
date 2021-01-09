@@ -1,0 +1,398 @@
+body {
+background-color: #fff3d4;
+}
+#leftBorder a {
+	position: absolute;
+	left:0px;
+	padding:15px;
+	width: 110px;
+	font-size: 15px;
+	color:#222222;
+	border-radius: 0 5px 5px 0;
+}
+#leftBorder{
+	width: 10%;
+	height: 1500px;
+	background-color: #ffffff;
+	float: left;
+}
+
+#rightBorder{
+	width: 10%;
+	height: 1000px;
+	background-color: #DDFF99;
+	float: right;
+}
+#main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+#profileButton{
+	opacity:0.6;
+	cursor: not-allowed;
+}
+#helpButton{
+	opacity:0.6;
+	cursor: not-allowed;
+}
+#settingButton{
+	opacity:0.6;
+	cursor: not-allowed;
+}
+#ReviewRate{
+	border:1px solid black;
+	border: double;
+	border-style: fill;
+	border-collapse: all;
+	padding: 5px;
+	text-align: left;
+	width: 45%;
+}
+#CustomerRate{
+	border:1px solid black;
+	border: double;
+	border-style: fill;
+	border-collapse: all;
+	padding: 5px;
+	text-align: left;
+	width: 45%;
+}
+#email{
+	display: none;
+}
+.listings{
+  margin-left: 110px;
+   padding: 0px 10px;
+}
+.listings table {
+  table-layout: fixed;
+  width: 625px;
+}
+.listings table td {
+  display: table-cell;
+  vertical-align: inherit;
+//  border: 1px solid black;
+  border-bottom: 1px solid #ddd;
+  width: 200%;
+
+  line-height: 1.4;
+  font-size: 17px;
+}
+.listings table p, .listings table b {
+  margin: 8px;
+}
+
+
+.profile-img{
+    text-align: center;
+    max-width: 1000px;
+    height: auto;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    border: none;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.SideBar {
+  height: 100%;
+  width: 110px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #348017;
+  /*
+  #111111
+  #b30000
+  #348017
+  */
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+.icon{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.ProfileShell{
+  margin-left: 110px; /* Same as the width of the sidebar */
+  font-size: 28px;
+  padding: 0px 10px;
+  min-height: 50px;
+  height: 100%;
+  min-width: 50px;
+  max-width: 100%;
+}
+.HelpPage{
+  margin-left: 110px; /* Same as the width of the sidebar */
+  font-size: 28px;
+  padding: 0px 10px;
+  min-height: 50px;
+  height: 100%;
+  min-width: 50px;
+  max-width: 100%;
+}
+.posting{
+  margin-left: 110px; /* Same as the width of the sidebar */
+  font-size: 28px;
+  padding: 0px 10px;
+  min-height: 50px;
+  height: 100%;
+  min-width: 50px;
+  max-width: 100%;
+}
+.SettingButton{
+	text-align: center;
+	background-color: #003174;
+	margin-left: 6%;
+    width: 40%;
+    display: block;
+  margin-left: 110px; /* Same as the width of the sidebar */
+  font-size: 28px;
+  padding: 0px 10px;
+  min-height: 50px;
+  height: 100%;
+  min-width: 50px;
+  max-width: 100%;
+}
+.Theme{
+    background: #5c9ded;
+    border-bottom: 3px solid #4e84c3;
+    -webkit-box-shadow: inset 0 -3px #4e84c3;
+    box-shadow: inset 0 -3px #4e84c3;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;    
+    font-size: 28px;
+}
+.Lang{
+    background: #ed5562;
+    border-bottom: 3px solid #e82e3e;
+    -webkit-box-shadow: inset 0 -3px #e82e3e;
+    box-shadow: inset 0 -3px #e82e3e;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;    
+    font-size: 28px;
+}
+.Ava{
+    background:  #42cb6f;
+    border-bottom: 3px solid #2f8e4e;
+    -webkit-box-shadow: inset 0 -3px  #2f8e4e;
+    box-shadow: inset 0 -3px #2f8e4e;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;    
+    font-size: 28px;
+}
+.Help{
+    background: #c7ce30;
+    border-bottom: 3px solid #3c988f; 
+    -webkit-box-shadow: inset 0 -3px  #3c988f;
+    box-shadow: inset 0 -3px #3c988f;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 28px;
+}
+.Pro{
+    background: #fd5fd5;
+    border-bottom: 3px solid #b95049;
+    -webkit-box-shadow: inset 0 -3px #b95049;
+    box-shadow: inset 0 -3px #b95049;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 28px;
+}
+.LogOut{
+    background: #D3F772;
+    border-bottom: 3px solid #313030;
+    -webkit-box-shadow: inset 0 -3px #313030;
+    box-shadow: inset 0 -3px #313030; 
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 28px;
+}
+.top{
+	margin-left: 6%
+}
+.bottom{
+	padding-top: 3%;
+	margin-left: 6%;
+}
+.profileImg{
+	border-radius: 100%;
+}
+.HistoryShell{
+  width: 50%; 
+  position: fixed; 
+  top: 0; 
+  left: 6%;
+}
+.RatingsShell{
+	width:25%;
+	position: fixed;
+	top: 0; /* Same as the width of the sidebar */
+	font-size: 28px;
+	left: 65%;
+}
+ul {
+  list-style-type: none;
+}
+ul.u1 > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+/* The Modal (pop-up window) */
+#modal {
+  position: fixed;
+  transform: translate(0,0);
+  width: auto; left: 0; right: 0;
+  height: auto; top: 0; bottom: 0;
+  z-index: 990; /* display above everything else */
+  padding: 20px; /* create padding for inner window - page under modal window will be still visible */
+}
+
+#modal .outer {
+  box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+#modal .inner {
+  box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box;
+  width: 100%;
+  height: auto;       /* allow to fit content (if smaller)... */
+  max-height: 100%;   /* ... but make sure it does not overflow browser window */
+/* allow vertical scrolling if required */
+  overflow-x: hidden;
+  overflow-y: auto;
+/* definition of modal window layout */
+  background: #ffffff;
+  border: 2px solid #222222;
+  border-radius: 16px; /* some nice (modern) round corners */
+  padding: 16px;       /* make sure inner elements does not overflow round corners */
+}
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 70%;
+}
+.modal-guts {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px 20px 20px;
+  overflow: auto;
+  
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body {
+  height: 550px;
+  overflow-y: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.PersonalInfo{
+	width: 40%;
+	padding: 2px;
+}
+.ExperienceLevel{
+	width: 40%;
+	padding: 2px;
+}
+#cancel_btn{
+	color: #fff;
+        padding: 12px 20px;
+	background-color: #f54b42;
+        border-radius: 4px;
+	border: none;
+        cursor: pointer;
+}
+#hide_btn{
+	color: #fff;
+        padding: 12px 20px;
+	background-color: #FDB515;
+        border-radius: 4px;
+	border: none;
+        cursor: pointer;
+}
+

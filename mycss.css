@@ -1,0 +1,94 @@
+.wlcome{
+	color: #fff;
+	text-align: center;
+	margin-top: 150px;
+	
+}
+.logo{
+	
+	margin-left: 400px;
+	position: relative;
+	font-family: arial;
+	font-weight: 900;
+	border: 5px solid red;
+	width:23px;
+	color: #fff;
+}
+
+.topSection{
+	width: 100%;
+	background-image: linear-gradient(#000066,   #4d0066);
+	color: #fff;
+	height: 800px;
+}
+.login-container{
+	text-align: center;
+}
+#homeSignin_btn{
+	color: #fff;
+	width: 80px;
+	padding: 8px;
+	background-color: #4CAF50;
+	border: none;
+}
+#homeSignUp_btn{
+	color: #fff;
+	width: 80px;
+	height: 20px;
+	padding: 8px;
+	background-color: #4CAF50;
+	border: none;
+}
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+.container {
+  padding: 16px;
+}
+.SignInBlock{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+.SignIupBlock{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+#cancel_btn{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
+	color: #fff;
+	width: 80px;
+	height: 20px;
+	padding: 8px;
+	background-color: #f54b42;
+	border: none;
+}
+#guestSignin_btn{
+	color: #fff;
+	width: 140px;
+	padding: 8px;
+	margin-top: 30px;
+	background-color: #4CAF50;
+	border: none;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}

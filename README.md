@@ -7,3 +7,6 @@ This web application is not the most aesthetically pleasing, but is built with f
 
 Demo here:
 https://micahgarrison.com/projects/3AM/
+
+Demo Images:
+![DemoImage1](https://github.com/g-micah/3AM/blob/main/images/DemoImage1.png)

@@ -9,11 +9,25 @@ $db_port = "3306";
 // mysqli_connect() function opens a new connection to the MySQL server.
 $conn = mysqli_connect("$db_host_ip", "$db_username", "$db_password", "$db_database", "$db_port");
 
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+
+
 if ($has_session = session_status() != PHP_SESSION_ACTIVE)
 {
 	session_start();// Starting Session
 }
 
+
+
+$my_test_query = "SELECT USR_username FROM USER";
+$my_ses_sql = mysqli_query($conn, $my_test_query);
+$my_row = mysqli_fetch_assoc($my_ses_sql);
+
+echo $my_row['USR_username'];
 
 // Storing Session
 $user_check = $_SESSION['login_user'];

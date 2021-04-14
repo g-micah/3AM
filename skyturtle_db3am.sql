@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Jan 09, 2021 at 02:51 PM
--- Server version: 10.4.14-MariaDB-cll-lve
--- PHP Version: 7.2.34
+-- Host: localhost
+-- Generation Time: Mar 17, 2021 at 03:41 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 7.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u836136612_CISCapstone`
+-- Database: `skyturtle_db3am`
 --
 
 -- --------------------------------------------------------
@@ -228,12 +228,12 @@ INSERT INTO `TRADE` (`TRA_id`, `TRA_name`, `CAT_id`, `TRA_description`) VALUES
 
 CREATE TABLE `USER` (
   `USR_id` int(10) NOT NULL,
-  `USR_username` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `USR_username` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
   `USR_pass` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
   `USR_fname` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
   `USR_lname` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
   `USR_email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `USR_phone` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `USR_phone` varchar(15) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `USR_color` int(1) NOT NULL DEFAULT 1,
   `USR_image` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'default.jpg',
   `USR_cert` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -262,7 +262,8 @@ INSERT INTO `USER` (`USR_id`, `USR_username`, `USR_pass`, `USR_fname`, `USR_lnam
 (30, 'tlucy', 'pass', 'Tom', 'Lucy', 'tlucy@domain.com', '757-608-8453', 1, 'default.jpg', '', -1, 'I am very proficient at playing drums.'),
 (31, 'gmicah', 'pass', 'Micah', 'Garrison', 'newemail@domain.com', '757-608-8453', 1, 'images/1582728941_turtle.jpg', 'CompTIA A+', -1, 'I like bacon'),
 (32, 'billybob123', 'password', 'Billy', 'Bob', 'billy@bob.com', '', 1, 'default.jpg', NULL, -1, '*bio empty*'),
-(33, 'guest', 'GuestPass123', 'John', 'Smith', 'johnsmith@domain.com', '123-456-7890', 1, 'default.jpg', '', -1, '*bio empty*');
+(33, 'guest', 'GuestPass123', 'John', 'Smith', 'johnsmith@domain.com', '123-456-7890', 1, 'default.jpg', '', -1, '*bio empty*'),
+(34, 'asdfsdfasdfadfasdfafasdfadf', 'myPUblicPass0', 't', 't', 'asd@dsaf.com', NULL, 1, 'default.jpg', NULL, -1, '*bio empty*');
 
 --
 -- Indexes for dumped tables
@@ -369,7 +370,7 @@ ALTER TABLE `TRADE`
 -- AUTO_INCREMENT for table `USER`
 --
 ALTER TABLE `USER`
-  MODIFY `USR_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `USR_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- Constraints for dumped tables
